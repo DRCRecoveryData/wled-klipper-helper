@@ -44,7 +44,7 @@ For Creality K1, K1C, (Probably) K2, Ender 3 V3 KE, and Ender 3 V3 Core XZ, as w
 Please note that you need to have Guilouz helper script installed to run curl properly. You can get it [here](https://github.com/Guilouz/Creality-Helper-Script).
 
 ```shell
-curl -sSL "https://raw.githubusercontent.com/iamlite/WLED-Klipper-Helper/main/start.sh" | sudo sh
+wget --no-check-certificate -O start.sh "https://raw.githubusercontent.com/iamlite/WLED-Klipper-Helper/main/start.sh" && sh start.sh
 ```
 
 For any other klipper installs. You can use an environment variable to set a custom path. Make sure to edit the INSTALL_DIR variable to choose where it is installed
